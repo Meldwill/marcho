@@ -9,7 +9,11 @@ const imagemin  = require('gulp-imagemin');
 const del  = require('del');
 
 function scripts() {
-  return src('app/js/main.js')
+  return src([
+    'node_modules/jquery/dist/jquery.js',
+    'node_modules/slick-carousel/slick/slick.js',
+    'app/js/main.js'
+])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
     .pipe(dest('app/js'))
