@@ -137,6 +137,10 @@
     line-height: 100%;
   }
 
+  &__form {
+    display: flex;
+  }
+
   &__link {
     margin-bottom: 14px;
     display: block;
@@ -145,11 +149,11 @@
   &__text {
     margin-bottom: 25px;
   }
-
   &__form-input {
     background-color: white;
     max-width: 320px;
     width: 100%;
+    margin-right: 3px;
     border: none;
     padding: 12px 10px 12px 15px;
 
@@ -2285,16 +2289,19 @@ element.style {
     padding: 24px;
     margin-bottom: 30px;
   }
-  &__form-box{
+
+  &__form-box {
     display: flex;
     justify-content: space-between;
-    input{
+
+    input {
       width: 330px;
     }
   }
-  &__form-btn{
-     @extend %btn;
-     border: none;
+
+  &__form-btn {
+    @extend %btn;
+    border: none;
   }
 }
 
