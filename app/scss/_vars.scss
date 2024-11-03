@@ -42,9 +42,9 @@ $bg: #f6f6f6;
 }
 
 @function max ($numbers...) {
-  @return m#{a}x(#{$numbers});
+  @return max($numbers...);
 }
 
-@function max ($numbers...) {
-  @return m#{i}n(#{$numbers});
+@function min ($numbers...) {
+  @return min($numbers...);
 }
